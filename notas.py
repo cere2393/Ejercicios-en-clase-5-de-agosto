@@ -1,17 +1,20 @@
-nota1=int(input("ingrese nota1:"))
-nota2=int(input("ingrese nota2:"))
-nota3=int(input("ingrese nota3:"))
-nota4=int(input("ingrese nota4:"))
-media= ((nota1+nota2+nota3+nota4)/4)
+nota1=int(input("ingresar n1:"))
+nota2=int(input("ingresar n2:"))
+nota3=int(input("ingresar n3:"))
+nota4=int(input("ingresar n4:"))
 
-if media>89 and media<101:
+promedio=(nota1+nota2+nota3+nota4)/4
+if promedio>100:
+    print ("error")
+   
+elif promedio>89 and promedio <101:
     print("A")
-elif media>79 and media< 90:
+elif promedio>79 and promedio< 90:
     print("B")
-elif media>69 and media< 80:
+elif promedio>69 and promedio< 80:
     print("C")
-elif media>59 and media< 70:
+elif promedio>59 and promedio< 70:
     print("D")
-else:
-    print("E")
 
+elif promedio>=0 and promedio<60:
+    print("E")
